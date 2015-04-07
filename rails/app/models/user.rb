@@ -1,4 +1,7 @@
 class User < ActiveRecord::Base
+  has_many :ratings
+  has_many :trails, through: :ratings
+
   before_save :ensure_authentication_token
 
   devise :database_authenticatable, :registerable,
