@@ -18,12 +18,12 @@ ActiveRecord::Schema.define(version: 20150407230733) do
 
   create_table "ratings", force: :cascade do |t|
     t.integer  "user_id"
-    t.integer  "trail_id"
     t.integer  "difficulty"
     t.integer  "funness"
     t.text     "notes"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.integer  "trail_id"
   end
 
   create_table "trails", force: :cascade do |t|
