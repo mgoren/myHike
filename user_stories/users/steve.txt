@@ -1,0 +1,30 @@
+Name:  Steve
+Occupation: Cook
+Description:  Steve goes hiking multiple times a week.  He enjoys going on any hike
+anywhere.  He likes to keep track of each hike and how many times he goes on
+each hike.  He is usually accompanies by a friend and a flask of whiskey.
+Steve is also an amateur photographer, and loves documenting his hikes and
+sharing images that he took for everyone to see.
+
+Steve's story A:
+
+Steve finds a new hike that he is interested in, and notices that isn't on
+myHike yet.  He uses his guidebook and creates a profile for the hike on
+myHike, pinning it to the map.  Using that pin, he navigates to the hike.
+
+While hiking on the trail, he takes note of the difficulty.  He also stops
+frequently and takes pictures of interesting scenery.  At the end, there is a
+waterfall that he takes a video of.
+
+When he gets home, he creates a rating, describing his experience.  He also
+uploads his photos and videos.
+
+
+Steve's story B:
+
+Steve wants to go on a hike he hasn't gone on before.  He browses myHike,
+looking at hikes that he hasn't rated yet.   He finds a new hike and decides
+to check it out.  He uses the pin to navigate to the hike.  He downloads the
+route to his phone, so he can access it without a signal.
+
+After the hike, he creates a rating that tags it as a hike he has gone on before.

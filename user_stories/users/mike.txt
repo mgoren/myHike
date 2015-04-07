@@ -1,0 +1,20 @@
+Name: Mike
+Occupation: Coder
+Description: Mike loves all mountain hikes, ranging
+from easy to difficult - day hikes and overnight backpacking trips. He likes to
+find detailed route guides that can be viewed while offline, with accompanying
+detailed route maps that can be superimposed over google maps or otherwise
+followed along with while offline. (He wants to be able to see his current location on the trail.)
+He also wants to be able to track his own notes on the hike.
+
+
+Mike story A:
+
+Mike wants to go on a hike that is less crowded, preferring to enjoy the
+solitude of nature with friends, not strangers.  He finds a hike that
+other users have noted as being populated with hikers.  The hike is far from
+cell phone towers, so he downloads the myHike map and route to his phone.
+
+On the hike, he makes note of different points of interest that associate
+with the map via gps.
+

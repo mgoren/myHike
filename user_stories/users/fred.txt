@@ -1,0 +1,32 @@
+Name: Fred
+Occupation: Software Developer
+Description:  Fred enjoys scenic hikes that aren't exceedingly difficult.  He
+doesn't like to travel too far for a hike.  He has a dog that enjoys hiking off
+leash.  He also has a daughter that is heavy to carry for long amounts of time,
+but he wants to bring her along so she can learn to enjoy nature.
+
+
+Fred's Story A:
+
+Fred sees the the conditions are nice for hiking this weekend.  He pulls up
+myHike on his computer at work to browse for hikes while on break.  He wants
+to find a hike where is dog can be safe off leash.  It also shouldn't be too
+difficult, because he will be carrying his 2 year old daughter most of the way.
+
+He can easily tell which hikes are easier by their average difficulty.  He
+chooses a hike with a difficulty rating of 2 and a dog friendliness rating
+of 4.5.
+
+
+Fred's Story B:
+
+Fred goes on the hike he discovered at work but a park ranger asks him to keep
+his dog in the vehicle because dogs are scaring an endangered species of chipmunk.
+He logs onto myHike and adds a rating that the hike, giving a dog friendliness
+rating of 0, and noting that dogs are no longer allowed on this hike.
+
+He then pulls up his myHike app, and finds a hike nearby that has a dog
+friendliness rating of 3 and a difficulty of 2, and goes on that hike.  His dog
+is off leash the entire time, and the hike was easy.  He creates a rating that
+gives that hike a dog friendliness rating of 5 and a difficulty of 2.
+

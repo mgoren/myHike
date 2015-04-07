@@ -1,0 +1,30 @@
+Name: Fred
+Occupation: Software Developer
+Description:  Fred enjoys scenic hikes that aren't exceedingly difficult.  He
+doesn't like to travel too far for a hike.  He has a dog that enjoys hiking off
+leash.  He also has a daughter that is heavy to carry for long amounts of time,
+but he wants to bring her along so she can learn to enjoy nature.
+
+
+Name: Samantha
+Occupation: Teacher
+Description:  Samantha loves diffcult hikes with a very rewarding view at the
+top.  She usually does these solo or with one other person, because she likes
+to move fast.  She sometimes goes on hikes with her slower husband, dog and
+daughter, and prefers these to be close to her house.
+
+Name:  Steve
+Occupation: Cook
+Description:  Steve goes hiking multiple times a week.  He enjoys going on any hike
+anywhere.  He likes to keep track of each hike and how many times he goes on
+each hike.  He is usually accompanies by a friend and a flask of whiskey.
+
+Name: Mike
+Occupation: Coder
+Description: Mike loves all mountain hikes, ranging
+from easy to difficult - day hikes and overnight backpacking trips. He likes to
+find detailed route guides that can be viewed while offline, with accompanying
+detailed route maps that can be superimposed over google maps or otherwise
+followed along with while offline. (He wants to be able to see his current location on the trail.)
+He also wants to be able to track his own notes on the hike.
+
