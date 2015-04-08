@@ -5,10 +5,19 @@ gem 'pg'
 gem 'active_model_serializers', '0.9.3'
 gem 'devise'
 gem 'rack-cors', require: 'rack/cors'
+gem 'geocoder'
 
 group :development, :test do
   gem 'byebug'
   gem 'web-console', '~> 2.0'
   gem 'spring'
   gem 'rspec-rails'
+  gem 'shoulda-matchers'
+  gem 'pry'
+  gem 'factory_girl_rails'
+end
+
+group :test do
+  gem 'capybara'
+  gem 'launchy'
 end
