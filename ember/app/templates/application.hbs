@@ -2,10 +2,24 @@
   <div class="container-fluid">
     <div class="navbar-header">
       <ul class="main-nav list-unstyled">
-        <li>{{#link-to 'index' class='navbar-brand'}}My Hike{{/link-to}}</li>
+        {{#link-to 'index' class='navbar-brand'}}My Hike{{/link-to}}
       </ul>
     </div>
     <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav sub-header">
+        <li>
+          {{#link-to 'index' class='sub-header'}}Hikes{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'index' class='sub-header'}}Map{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'index' class='sub-header'}}About{{/link-to}}
+        </li>
+        <li>
+          {{#link-to 'index' class='sub-header'}}Contact{{/link-to}}
+        </li>
+      </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if session.isAuthenticated}}
           <li>
@@ -13,7 +27,7 @@
           </li>
         {{else}}
           <li>
-            {{#link-to 'login' class="dropdown-toggle sub-header"}}Login{{/link-to}}
+            {{#link-to 'login'}}Login{{/link-to}}
           </li>
           <li>
             {{#link-to 'users.new'}}Register{{/link-to}}
