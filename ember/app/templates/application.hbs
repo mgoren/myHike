@@ -23,14 +23,14 @@
       <ul class="nav navbar-nav navbar-right">
         {{#if session.isAuthenticated}}
           <li>
-            <button {{ action 'invalidateSession' }}>Logout</button>
+            {{#link-to 'index' action 'invalidateSession'}}Logout{{/link-to}}
           </li>
         {{else}}
           <li>
-            {{#link-to 'login'}}Login{{/link-to}}
+            {{#link-to 'users.new'}}Register{{/link-to}}
           </li>
           <li>
-            {{#link-to 'users.new'}}Register{{/link-to}}
+            {{#link-to 'login'}}Login{{/link-to}}
           </li>
         {{/if}}
       </ul>
