@@ -4,4 +4,9 @@
 
 .navbar-right {
   color: white;
+  font-size: 1.25em;
+}
+
+.sub-header {
+  font-size: 1.25em;
 }
