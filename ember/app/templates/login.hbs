@@ -1,9 +1,10 @@
 <form {{action 'authenticate' on='submit'}}>
   <label for='identification'>Login</label>
-  {{input id='indentification' placeholder='Enter Login' value=identification}}
+  {{input id='indentification' class='form-control' placeholder='Enter Login' value=identification}}
   <label for='password'>Password</label>
-  {{input id='password' placeholder='Enter Password' type='password' value=password}}
-  <button type='submit'>Login</button>
+  {{input id='password' class='form-control' placeholder='Enter Password' type='password' value=password}}
+  <br>
+  <button class='btn btn-success' type='submit'>Login</button>
 </form>
 
 {{outlet}}
