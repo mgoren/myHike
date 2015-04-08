@@ -43,7 +43,6 @@ class TrailsController < ApplicationController
   def destroy
     @trail = Trail.find(params[:id])
     @trail.destroy
-
     respond_to do |format|
       format.json { head :no_content }
     end
