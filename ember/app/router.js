@@ -14,5 +14,7 @@ export default Router.map(function() {
     this.route('new');
   });
 
-  this.route('trails');
+  this.route('trails', function(){
+    this.route('show', {path: ':trail_id'});
+  });
 });

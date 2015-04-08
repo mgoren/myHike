@@ -1,0 +1,5 @@
+{{#each trail in this}}
+  {{~#link-to 'trails.show' trail}}
+    {{trail.name}} In: {{trail.location}}
+  {{~/link-to}}
+{{/each}}
