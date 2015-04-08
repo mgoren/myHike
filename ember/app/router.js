@@ -8,7 +8,11 @@ var Router = Ember.Router.extend({
 export default Router.map(function() {
   this.route('protected');
   this.route('login');
-  this.resource('user', function() {});
+  this.resource('user', {path: 'users/:user_id' }, function() {
+    this.route('ratings', function() {
+      this.route('new');
+    });
+  });
 
   this.route('users', function() {
     this.route('new');
@@ -22,9 +26,13 @@ export default Router.map(function() {
     this.route('index');
   });
 
-  this.route('trails', function(){
-    this.route('show', {path: ':trail_id'});
+  this.resource('trails', function() {
+    this.route('index', {path: '/'});
+    this.route('show', {path: '/:trail_id'}, function() {
+      this.route('edit');
+    });
     this.route('new');
-    this.route('edit');
   });
+
+
 });

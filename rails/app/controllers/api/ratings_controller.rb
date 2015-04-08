@@ -1,4 +1,4 @@
-class RatingsController < ApplicationController
+class Api::RatingsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
     @ratings = @user.ratings.all
