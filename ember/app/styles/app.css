@@ -1,4 +1,7 @@
 .navbar-brand {
-  font-size: 2.5em;
-  margin-bottom: 20px;
+  font-size: 3em;
+}
+
+.navbar-right {
+  color: white;
 }
