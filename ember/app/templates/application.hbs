@@ -1,3 +1,5 @@
+<div class="container">
+
 <h2 id="title">My Hike</h2>
 {{#if session.isAuthenticated}}
   <button {{ action 'invalidateSession' }}>Logout</button>
@@ -12,3 +14,4 @@
 
 <hr>
 {{outlet}}
+</div>
