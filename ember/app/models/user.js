@@ -8,4 +8,4 @@ var User = DS.Model.extend({
   password_confirmation: attr('string')
 });
 
-export default User
+export default User;
