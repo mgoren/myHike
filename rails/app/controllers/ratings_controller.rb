@@ -2,11 +2,17 @@ class RatingsController < ApplicationController
   def index
     @user = User.find(params[:user_id])
     @ratings = @user.ratings.all
+    respond_to do |format|
+      format.json { render json: @ratings }
+    end
   end
 
   def show
     @user = User.find(params[:user_id])
     @rating = Rating.find(params[:id])
+    respond_to do |format|
+      format.json { render json: @rating }
+    end
   end
 
   def create
