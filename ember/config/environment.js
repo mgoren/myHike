@@ -3,6 +3,9 @@
 module.exports = function(environment) {
 
   var ENV = {
+    railsCsrf: {
+      csrfURL: 'api/csrf'
+    },
     modulePrefix: 'myhike',
     environment: environment,
     baseURL: '/',
