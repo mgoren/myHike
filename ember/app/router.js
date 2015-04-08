@@ -8,4 +8,9 @@ var Router = Ember.Router.extend({
 export default Router.map(function() {
   this.route('protected');
   this.route('login');
+  this.resource('user', function() {});
+
+  this.route('users', function() {
+    this.route('new');
+  });
 });
