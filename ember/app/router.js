@@ -24,5 +24,7 @@ export default Router.map(function() {
 
   this.route('trails', function(){
     this.route('show', {path: ':trail_id'});
+    this.route('new');
+    this.route('edit');
   });
 });
