@@ -1,17 +1,24 @@
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <ul class="main-nav list-unstyled">
+        <li>{{#link-to 'index' class='navbar-brand'}}My Hike{{/link-to}}</li>
+      </ul>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      {{#if session.isAuthenticated}}
+        <button {{ action 'invalidateSession' }}>Logout</button>
+      {{else}}
+        {{#link-to 'login'}}Login{{/link-to}}
+        {{#link-to 'users.new'}}Register{{/link-to}}
+      {{/if}}
+    </ul>
+  </div>
+</nav>
+
+
+
 <div class="container">
-
-<h2 id="title">My Hike</h2>
-{{#if session.isAuthenticated}}
-  <button {{ action 'invalidateSession' }}>Logout</button>
-{{else}}
-  {{#link-to 'login'}}Login{{/link-to}}
-  {{#link-to 'users.new'}}Register{{/link-to}}
-{{/if}}
-
-{{#link-to 'index'}}Home{{/link-to}}
-{{#link-to 'protected'}}Protected{{/link-to}}
-
-
-<hr>
 {{outlet}}
 </div>
