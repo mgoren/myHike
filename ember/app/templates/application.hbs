@@ -3,10 +3,12 @@
   <button {{ action 'invalidateSession' }}>Logout</button>
 {{else}}
   {{#link-to 'login'}}Login{{/link-to}}
+  {{#link-to 'users.new'}}Register{{/link-to}}
 {{/if}}
 
 {{#link-to 'index'}}Home{{/link-to}}
 {{#link-to 'protected'}}Protected{{/link-to}}
+
 
 <hr>
 {{outlet}}
