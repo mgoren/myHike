@@ -1,4 +1,4 @@
-class TrailsController < ApplicationController
+class Api::TrailsController < ApplicationController
 
   def index
     @trails = Trail.all

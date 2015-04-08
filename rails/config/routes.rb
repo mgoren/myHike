@@ -10,13 +10,14 @@ Rails.application.routes.draw do
   devise_for :users, controllers: { sessions: 'sessions', registrations: 'registrations' }
 
 
-  resources :trails, except: [:new, :edit]
+
 
   namespace :api do
     get :csrf, to: 'csrf#index'
     devise_scope :user do
       post "/users" => "registrations#create"
     end
+    resources :trails, except: [:new, :edit]
   end
 
 end
