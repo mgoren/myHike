@@ -16,14 +16,11 @@
         <li>
           {{#link-to 'index' class='sub-header'}}About{{/link-to}}
         </li>
-        <li>
-          {{#link-to 'index' class='sub-header'}}Contact{{/link-to}}
-        </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
         {{#if session.isAuthenticated}}
           <li>
-            {{#link-to 'index' action 'invalidateSession'}}Logout{{/link-to}}
+            <a {{ action 'invalidateSession' }}>Logout</a>
           </li>
         {{else}}
           <li>
@@ -39,5 +36,5 @@
 </nav>
 
 <div class="container">
-{{outlet}}
+  {{outlet}}
 </div>
