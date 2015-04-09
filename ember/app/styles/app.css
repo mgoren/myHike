@@ -77,3 +77,12 @@ label {
 .search-result-box a {
   color: #458B00;
 }
+
+.map-canvas {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
