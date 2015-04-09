@@ -14,6 +14,10 @@ video {
   transition: 1s opacity;
 }
 
+h2, label {
+  color: #FFF;
+}
+
 .navbar-brand {
   font-size: 3em;
 }
@@ -42,4 +46,3 @@ video {
   background: url('backgroundVideo.MOV') no-repeat;
   backgrond-size: cover;
 }
- 
