@@ -10,3 +10,8 @@
 .sub-header {
   font-size: 1.25em;
 }
+
+.map-canvas {
+  width: 600px;
+  height: 400px;
+}

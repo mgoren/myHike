@@ -1,5 +1,7 @@
-<div id="map" style="width: 100%; height: 500px;">Loading Map... determining your location... reticulating splines... this might take a few seconds....</div>
-
-{{#each trail in this}}
-    <p>{{trail.location}}</p>
-{{/each}}
+{{google-map
+    zoom=zoom
+    lat=lat
+    lng=lng
+    markerInfoWindowTemplateName='maps/info-window'
+    markers=model
+    markerController='maps/my-marker'}}
