@@ -1,0 +1,5 @@
+{{#each user in this}}
+  {{~#link-to 'users.show' user}}
+    <p>{{user.email}}</p>
+  {{~/link-to}}
+{{/each}}
