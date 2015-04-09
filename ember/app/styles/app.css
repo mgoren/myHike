@@ -15,6 +15,10 @@ video {
   transition: 1s opacity;
 }
 
+h2, label {
+  color: #FFF;
+}
+
 
 .navbar-brand {
   font-size: 3em;
@@ -28,8 +32,6 @@ video {
 .sub-header {
   font-size: 1.25em;
 }
-
-
 
 .video {
   position: fixed;
