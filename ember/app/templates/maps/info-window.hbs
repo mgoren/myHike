@@ -1,5 +1,7 @@
-<strong>{{title}}</strong>
-<p>{{body}}</p>
+{{~#link-to 'trails.show' this}}
+  {{this.name}} In: {{this.location}}
+{{~/link-to}}
+
 <p>
   Coordinates:<br>
   <small>
