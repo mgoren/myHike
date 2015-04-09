@@ -1,7 +1,3 @@
-import Ember from 'ember';
-
-// Can't seem to get Geolocation to work properly. Shelving this for now.
-
 // Get user's coordinates if able
 // function askForLocation() {
   var lat, lng;
@@ -13,10 +9,9 @@ import Ember from 'ember';
     navigator.geolocation.getCurrentPosition(
     // Success
     function(position) {
-      // debugger;
+      debugger;
       lat = position.coords.latitude;
       lng = position.coords.longitude;
-      map.setCenter(new google.maps.LatLng(lat, lng));
     },
     // Failure
     function() {
@@ -28,9 +23,3 @@ import Ember from 'ember';
 // }
 
 // google.maps.event.addDomListener(window, 'load', askForLocation);
-
-export default Ember.ArrayController.extend({
-  zoom: 8,
-  lat: lat,
-  lng: lng
-});
