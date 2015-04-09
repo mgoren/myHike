@@ -1,3 +1,22 @@
+<<<<<<< HEAD
+=======
+video {
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 0;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin: 0;
+  background: url('backgroundVideo.MOV') no-repeat;
+  backgrond-size: cover;
+  transition: 1s opacity;
+}
+
+>>>>>>> abc2ee647f2ebdaf5205b55504fa15ca132df3bd
 .navbar-brand {
   font-size: 3em;
 }
@@ -10,3 +29,23 @@
 .sub-header {
   font-size: 1.25em;
 }
+<<<<<<< HEAD
+=======
+
+
+.video {
+  position: fixed;
+  min-height: 100%;
+  min-width: 100%;
+  width: auto;
+  height: auto;
+  padding: 0;
+  padding-top: 90px;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  margin: 0;
+  background: url('backgroundVideo.MOV') no-repeat;
+  backgrond-size: cover;
+}
+>>>>>>> abc2ee647f2ebdaf5205b55504fa15ca132df3bd
