@@ -8,15 +8,17 @@ import Ember from 'ember';
 
   if (navigator.geolocation) {
     // Fallback coordinates for when Geolocation isn't available/allowed.
-    lat = 37.7749295;
-    lng = -122.4194155;
+    lat = 37.7749295;   // San Francisco
+    lng = -122.4194155; // San Francisco
+    lat = 45.5230622;   // Portland
+    lng = -122.6764816; // Portland
     navigator.geolocation.getCurrentPosition(
     // Success
     function(position) {
       // debugger;
       lat = position.coords.latitude;
       lng = position.coords.longitude;
-      map.setCenter(new google.maps.LatLng(lat, lng));
+      // map.setCenter(new google.maps.LatLng(lat, lng));
     },
     // Failure
     function() {

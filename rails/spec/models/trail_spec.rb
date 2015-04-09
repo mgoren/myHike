@@ -4,6 +4,7 @@ describe Trail do
   it { should have_many :ratings }
   it { should have_many(:users).through :ratings }
   it { should validate_presence_of :address }
+  it { should validate_presence_of :name }
 
   it "populates the coordinates based on address" do
     trail = Trail.create(address: "208 SW 5th Ave, Portland, OR")
