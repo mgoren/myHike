@@ -1,10 +1,11 @@
 {{~#link-to 'trails.show' this}}
-  {{this.name}} In: {{this.location}}
+  <p>{{this.name}}</p>
 {{~/link-to}}
-
-<p>
-  Coordinates:<br>
-  <small>
-    <code>{{lat}}</code>,<code>{{lng}}</code>
-  </small>
-</p>
+<dl>
+  <dt>Location:</dt>
+  <dd>{{this.location}}</dd>
+  <dt>Latitude:</dt>
+  <dd>{{lat}}</dd>
+  <dt>Longitude:</dt>
+  <dd>{{lng}}</dd>
+</dl>
