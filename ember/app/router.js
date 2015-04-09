@@ -15,9 +15,7 @@ export default Router.map(function() {
   });
 
   this.resource('user', {path: '/users/:user_id'}, function() {
-    this.resource('ratings', function() {
-      this.route('index', {path: '/'});
-    });
+    this.route('index', {path: '/'});
   });
 
   this.route('maps', function() {
