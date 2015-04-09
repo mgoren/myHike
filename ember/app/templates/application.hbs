@@ -21,8 +21,9 @@
         <div class="form-group">
           {{input type="text" value=search placeholder="search" class="search form-control"}}
         </div>
-        <button type="submit" class="btn btn-default">Submit</button>
+        <button type="submit" class="btn btn-default" {{action 'setShowSearch'}}>Submit</button>
       </form>
+
       <ul class="nav navbar-nav navbar-right">
         {{#if session.isAuthenticated}}
           <li>
@@ -42,13 +43,14 @@
 </nav>
 
 <div class="container">
-<aside>
-  <h4 class="searched-trails">Trails{{length}}</h4>
-    {{#each trail in trails}}
-      <li>
-        {{#link-to 'trails.show' trail}} {{trail.name}} {{/link-to}}
-      </li>
-    {{/each}}
-</aside>
+  {{#if showSearch}}
+    <div class='search-result-box well col-sm-3'>
+      <h4 class="searched-trails">Search Results</h4>
+        {{#each trail in trails}}
+          <a href='#' {{action 'hideSearchBox'}}>{{#link-to 'trails.show' trail}} {{trail.name}} {{/link-to}}</a><br>
+        {{/each}}
+    </div>
+  {{/if}}
+
   {{outlet}}
 </div>
