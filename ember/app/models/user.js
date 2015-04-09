@@ -5,7 +5,8 @@ var attr = DS.attr;
 var User = DS.Model.extend({
   email: attr('string'),
   password: attr('string'),
-  password_confirmation: attr('string')
+  password_confirmation: attr('string'),
+  trails: DS.hasMany('trail', { async: true })
 });
 
 export default User;
