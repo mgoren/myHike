@@ -2,8 +2,10 @@
   <p>{{this.name}}</p>
 {{~/link-to}}
 <dl>
-  <dt>Location:</dt>
-  <dd>{{this.location}}</dd>
+  {{#if this.location}}
+    <dt>Location:</dt>
+    <dd>{{this.location}}</dd>
+  {{/if}}
   <dt>Latitude:</dt>
   <dd>{{lat}}</dd>
   <dt>Longitude:</dt>
