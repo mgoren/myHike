@@ -1,0 +1,13 @@
+{{~#link-to 'trails.show' this}}
+  <p>{{this.name}}</p>
+{{~/link-to}}
+<dl>
+  {{#if this.location}}
+    <dt>Location:</dt>
+    <dd>{{this.location}}</dd>
+  {{/if}}
+  <dt>Latitude:</dt>
+  <dd>{{lat}}</dd>
+  <dt>Longitude:</dt>
+  <dd>{{lng}}</dd>
+</dl>

@@ -4,28 +4,24 @@ User.create([
   {email: 'tina@tina.tina',
    password: 'password', password_confirmation: 'password' },
   {email: 'jake@jake.jake',
+   password: 'password', password_confirmation: 'password' },
+  {email: 'chris@chris.chris',
+   password: 'password', password_confirmation: 'password' },
+  {email: 'david@david.david',
    password: 'password', password_confirmation: 'password' }
 ])
 
 Trail.create([
-  { name: 'devil pass',
+  { name: 'Dog Mountain',
     description: 'yes this is great its so warm here',
-    latitude: 23.34,
-    longitude: 23.54,
-    location: "Portland, OR" },
-  { name: 'blag pass',
+    address: "45.6993, -121.7066" },
+  { name: 'Salmon Creek Trail',
     description: 'no this is great its so warm here',
-    latitude: 53.34,
-    longitude: 43.54,
-    location: "Beaverton, OR" },
-  { name: 'bluetrail pass',
-    description: 'whatever this is great its so warm here',
-    latitude: 53.34,
-    longitude: 73.54,
-    location: "Greshy, OR" },
-  { name: 'red pass',
-    description: 'yes holler its so warm here',
-    latitude: 13.34,
-    longitude: 73.54,
-    location: "Sortland, OR" }
+    address: "45.7075, -122.6658",
+    location: "Vancouver, WA" },
+  { name: 'Twin Sisters Rock',
+    address: "46.0426, -118.9404",
+    location: "Washington" },
+  { name: 'Horan Natural Area',
+    address: "47.4601, -120.3305" }
   ])
