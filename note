@@ -1,0 +1,9 @@
+users can create "ratings" which are handled by ratings controller and assigned to current_user and to the hike they choose to rate
+
+users can also create "trails" which are handled by trails controller and have a rating assigned to it as a property (and the rating is assigned to current_user)
+
+
+
+rating: belongs to user & trail
+trail: has many ratings (and users via ratings)
+user: has many ratings (and trails via ratings)

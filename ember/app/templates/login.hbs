@@ -1,4 +1,11 @@
-<h2>Login to Your Account</h2>
+<div class='video'>
+  <video autoplay muted poster="backgroundVideo.MOV" id='bgvid' loop>
+    <source src="backgroundVideo.MOV" type="video/webm">
+    <source src="backgroundVideo.MOV" type="video/mp4">
+  </video>
+</div>
+
+<h2 class='centerz'>Login to Your Account</h2>
 <form {{action 'authenticate' on='submit'}}>
   <label for='identification'>Login</label>
   {{input id='indentification' class='form-control' placeholder='Enter Login' value=identification}}

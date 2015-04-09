@@ -1,0 +1,18 @@
+<h2>Add a new hike</h2>
+<form>
+  <p>
+    <label>Name</label>
+     {{input value=model.name id="name" class="form-control"}}
+  </p>
+  <p>
+    <label>Location</label>
+     {{input value=model.location id="location" class="form-control"}}
+  </p>
+  <p>
+    <label>Description</label>
+     {{textarea cols="80" rows="6" value=model.description id="description" class="form-control"}}
+  </p>
+  <p>
+    <input class="btn btn-success" type="submit" value="Add Hike" {{action 'save'}}>
+  </p>
+</form>
