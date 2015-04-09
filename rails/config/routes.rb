@@ -10,9 +10,8 @@ Rails.application.routes.draw do
       post "/users" => "registrations#create"
     end
     resources :trails, except: [:new, :edit]
-    resources :users, only: [:index, :show] do
-      resources :ratings, except: [:new, :edit]
-    end
+    resources :users, only: [:index, :show]
+    resources :ratings, except: [:new, :edit]
   end
 
 end

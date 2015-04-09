@@ -3,9 +3,9 @@ import DS from 'ember-data';
 var attr = DS.attr;
 
 var User = DS.Model.extend({
-  email: attr('string'),
-  password: attr('string'),
-  password_confirmation: attr('string'),
+  email: attr('string', { async: true }),
+  password: attr('string', { async: true }),
+  password_confirmation: attr('string', { async: true }),
   ratings: DS.hasMany('rating', { async: true })
 });
 

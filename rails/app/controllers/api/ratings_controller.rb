@@ -1,14 +1,14 @@
 class Api::RatingsController < ApplicationController
   def index
-    @user = User.find(params[:user_id])
-    @ratings = @user.ratings.all
+    @trail = Trail.find(params[:trail_id])
+    @ratings = @trail.ratings.all
     respond_to do |format|
       format.json { render json: @ratings }
     end
   end
 
   def show
-    @user = User.find(params[:user_id])
+    @trail = Trail.find(params[:trail_id])
     @rating = Rating.find(params[:id])
     respond_to do |format|
       format.json { render json: @rating }
@@ -16,8 +16,8 @@ class Api::RatingsController < ApplicationController
   end
 
   def create
-    @user = User.find(params[:user_id])
-    @rating = @user.ratings.new(rating_params)
+    @rating = Rating.new(rating_params)
+    @rating.user = current_user # not working!
     if @rating.save
       respond_to do |format|
         format.json { render json: @rating, status: 201 }
@@ -52,7 +52,7 @@ class Api::RatingsController < ApplicationController
 
 private
   def rating_params
-    params.require(:rating).permit(:difficulty, :funness, :notes)
+    params.require(:rating).permit(:difficulty, :funness, :notes, :trail_id)
   end
 
 end
