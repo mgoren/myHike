@@ -1,3 +1,4 @@
+
 video {
   position: fixed;
   min-height: 100%;
@@ -17,6 +18,7 @@ video {
 h2, label {
   color: #FFF;
 }
+
 
 .navbar-brand {
   font-size: 3em;
@@ -45,4 +47,24 @@ h2, label {
   margin: 0;
   background: url('backgroundVideo.MOV') no-repeat;
   backgrond-size: cover;
+}
+
+.search-result-box {
+  color: #458B00 ;
+  background-color: rgba(0, 0, 0, 0.3);
+  margin-top: -23px;
+  left: 40%;
+  right: 60%;
+}
+
+.search-result-box h4 {
+  color: #b2dbfb;
+}
+
+.search-result-box a {
+  color: #b2dbfb
+}
+
+#main-outlet {
+  position: absolute;
 }

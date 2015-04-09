@@ -17,6 +17,12 @@
           {{#link-to 'about' class='sub-header'}}About{{/link-to}}
         </li>
       </ul>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="form-group">
+          {{input type="text" value=search placeholder="Search Trails" class="search form-control"}}
+        </div>
+      </form>
+
       <ul class="nav navbar-nav navbar-right">
         {{#if session.isAuthenticated}}
           <li>
@@ -35,6 +41,18 @@
   </div>
 </nav>
 
+{{#if search.length}}
+  <div class='search-result-box well col-sm-3'>
+    <h4 class="searched-trails">Search Results</h4>
+      {{#each trail in trails}}
+        <a href='#' {{action 'hideSearchBox'}}>{{#link-to 'trails.show' trail}} {{trail.name}} {{/link-to}}</a><br>
+      {{/each}}
+  </div>
+{{/if}}
+
+
 <div class="container">
-  {{outlet}}
+  <div id='main-outlet'>
+    {{outlet}}
+  </div>
 </div>
