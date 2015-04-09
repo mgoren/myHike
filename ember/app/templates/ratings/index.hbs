@@ -1,1 +1,9 @@
+<<<<<<< HEAD
 HI
+=======
+{{#each rating in this}}
+  {{~#link-to 'trails.show' rating.trail}}
+  <p> {{rating.trail.name}} </p>
+  {{~/link-to}}
+{{/each}}
+>>>>>>> abc2ee647f2ebdaf5205b55504fa15ca132df3bd
