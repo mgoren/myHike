@@ -1,5 +1,3 @@
-<<<<<<< HEAD
-=======
 video {
   position: fixed;
   min-height: 100%;
@@ -16,7 +14,6 @@ video {
   transition: 1s opacity;
 }
 
->>>>>>> abc2ee647f2ebdaf5205b55504fa15ca132df3bd
 .navbar-brand {
   font-size: 3em;
 }
@@ -29,9 +26,6 @@ video {
 .sub-header {
   font-size: 1.25em;
 }
-<<<<<<< HEAD
-=======
-
 
 .video {
   position: fixed;
@@ -48,4 +42,4 @@ video {
   background: url('backgroundVideo.MOV') no-repeat;
   backgrond-size: cover;
 }
->>>>>>> abc2ee647f2ebdaf5205b55504fa15ca132df3bd
+ 
