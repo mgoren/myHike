@@ -62,3 +62,7 @@ video {
 .search-result-box a {
   color: #b2dbfb
 }
+
+#main-outlet {
+  position: absolute;
+}

@@ -1,5 +1,6 @@
 import Ember from 'ember';
 
+
 export default Ember.ArrayController.extend({
   showSearch: false,
   actions: {
@@ -7,7 +8,7 @@ export default Ember.ArrayController.extend({
       Ember.set(this, 'showSearch', true);
     },
     hideSearchBox: function() {
-      Ember.set(this, 'search', '')
+      Ember.set(this, 'search', '');
       Ember.set(this, 'showSearch', false);
     }
   },

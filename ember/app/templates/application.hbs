@@ -19,9 +19,8 @@
       </ul>
       <form class="navbar-form navbar-left" role="search">
         <div class="form-group">
-          {{input type="text" value=search placeholder="search" class="search form-control"}}
+          {{input type="text" value=search placeholder="Search Trails" class="search form-control"}}
         </div>
-        <button type="submit" class="btn btn-default" {{action 'setShowSearch'}}>Submit</button>
       </form>
 
       <ul class="nav navbar-nav navbar-right">
@@ -42,15 +41,18 @@
   </div>
 </nav>
 
-<div class="container">
-  {{#if showSearch}}
-    <div class='search-result-box well col-sm-3'>
-      <h4 class="searched-trails">Search Results</h4>
-        {{#each trail in trails}}
-          <a href='#' {{action 'hideSearchBox'}}>{{#link-to 'trails.show' trail}} {{trail.name}} {{/link-to}}</a><br>
-        {{/each}}
-    </div>
-  {{/if}}
+{{#if search.length}}
+  <div class='search-result-box well col-sm-3'>
+    <h4 class="searched-trails">Search Results</h4>
+      {{#each trail in trails}}
+        <a href='#' {{action 'hideSearchBox'}}>{{#link-to 'trails.show' trail}} {{trail.name}} {{/link-to}}</a><br>
+      {{/each}}
+  </div>
+{{/if}}
 
-  {{outlet}}
+
+<div class="container">
+  <div id='main-outlet'>
+    {{outlet}}
+  </div>
 </div>
