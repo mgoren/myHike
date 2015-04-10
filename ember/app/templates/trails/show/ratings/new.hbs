@@ -1,0 +1,18 @@
+<h2>Rate this hike</h2>
+<form>
+  <p>
+    <label>Difficulty</label>
+     {{input type='number' value=model.difficulty id="difficulty" class="form-control"}}
+  </p>
+  <p>
+    <label>Funness</label>
+     {{input type='number' value=model.funness id="funness" class="form-control"}}
+  </p>
+  <p>
+    <label>Notes</label>
+     {{input type='text' value=model.notes id="notes" class="form-control"}}
+  </p>
+  <p>
+    <input class="btn btn-success" type="submit" value="Rate!" {{action 'save'}}>
+  </p>
+</form>

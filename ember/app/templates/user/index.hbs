@@ -3,5 +3,10 @@
 <h3>Trails Hiked:</h3>
 
 {{#each rating in this.ratings}}
-  <p>{{rating.trail.name}}</p>
+  <p>{{rating.trail.name}} </p>
+  <ul class="list-unstyled">
+    <li>Difficulty: {{rating.difficulty}}</li>
+    <li>Funness: {{rating.funness}}</li>
+    <li>Notes: {{rating.notes}}</li>
+  </ul>
 {{/each}}
