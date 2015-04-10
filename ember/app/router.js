@@ -30,6 +30,7 @@ export default Router.map(function() {
     this.route('index', {path: '/'});
     this.route('new');
     this.route('show', {path: '/:trail_id'}, function() {
+      this.route('rating'); // for rating show
       this.route('edit');
       this.route('ratings', function() {
         this.route('index', {path: '/'});

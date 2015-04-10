@@ -42,7 +42,11 @@
 
 {{#if search.length}}
   <div class='search-result-box well col-sm-3'>
-    <h4 class="searched-trails">Search Results</h4>
+    {{#if trails.length}}
+      <h4 class="searched-trails">Search Results</h4>
+    {{else}}
+      <h4>No Results</h4>
+    {{/if}}
       {{#each trail in trails}}
         <a href='#' {{action 'hideSearchBox'}}>{{#link-to 'trails.show' trail}} {{trail.name}} {{/link-to}}</a><br>
       {{/each}}
