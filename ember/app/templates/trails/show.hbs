@@ -1,12 +1,18 @@
 <h1>{{model.name}}</h1>
 
-Location: {{model.location}}
-
-Latitude: {{model.latitude}}
-Longitude: {{model.longitude}}
+<dl>
+  {{#if this.location}}
+    <dt>Location:</dt>
+    <dd>{{model.location}}</dd>
+  {{/if}}
+  <dt>Latitude:</dt>
+  <dd>{{model.latitude}}</dd>
+  <dt>Longitude:</dt>
+  <dd>{{model.longitude}}</dd>
+</dl>
 
 <iframe
-  width="600"
+  width="100%"
   height="450"
   frameborder="0" style="border:0"
   src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD7eL97U_zG1oN0zY7CO0CJTFxsGMxsN1M&q={{model.address}}">
