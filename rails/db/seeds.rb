@@ -14,7 +14,8 @@ User.create([
 Trail.create([
   { name: 'Dog Mountain',
     description: 'yes this is great its so warm here',
-    address: "45.6993, -121.7066" },
+    address: "45.6993, -121.7066",
+    location: "Washington"},
   { name: 'Salmon Creek Trail',
     description: 'no this is great its so warm here',
     address: "45.7075, -122.6658",
@@ -23,5 +24,19 @@ Trail.create([
     address: "46.0426, -118.9404",
     location: "Washington" },
   { name: 'Horan Natural Area',
-    address: "47.4601, -120.3305" }
+    address: "47.4601, -120.3305" },
+  { name: 'Null Hike',
+    address: "208 SW 5th Ave, Portland, OR" },
+  { name: "Tryon Creek",
+    address: "11321 SW Terwilliger Blvd, Portland, OR" },
+  { name: "Wahkeena falls Loop",
+    address: "Wahkeena Falls, Wahkeena Trail #420 , Corbett, OR 97019" },
+  { name: "Eagle Creek Trail",
+    address: "74108 NE Eagle Creek Loop, Bonneville, OR 97014" },
+  { name: "Angel's Rest Hiking Trail",
+    address: "Scenic Columbia River Hwy, Exit 28, Corbett, OR 97019" },
+  { name: "Silver Falls State Park",
+    address: "20024 Silver Falls Hwy SE, Sublimity, OR 97385" },
+  { name: "Saddle Mountain",
+    address: "Saddle Mountain, Oregon 97138, USA" }
   ])
