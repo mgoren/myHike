@@ -91,6 +91,11 @@ label {
   font-family: nature;
 }
 
+.nature {
+  font-family: nature;
+  color: #458B00;
+}
+
 .search-result-box {
   font-family: nature;
   position: absolute;
