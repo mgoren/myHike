@@ -2547,7 +2547,7 @@ output {
   padding: 6px 16px;
   font-size: 13px;
   line-height: 1.846;
-  color: #666666;
+  color: #FFF;
   background-color: transparent;
   background-image: none;
   border: 1px solid transparent;
@@ -2559,20 +2559,21 @@ output {
   transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
 }
 .form-control:focus {
-  border-color: #66afe9;
+  border-color: #458B00;
   outline: 0;
   -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
   box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 175, 233, 0.6);
 }
 .form-control::-moz-placeholder {
-  color: #bbbbbb;
+  color: #458B00;
+
   opacity: 1;
 }
 .form-control:-ms-input-placeholder {
-  color: #bbbbbb;
+  color: #458B00;
 }
 .form-control::-webkit-input-placeholder {
-  color: #bbbbbb;
+  color: #458B00
 }
 .form-control[disabled],
 .form-control[readonly],
@@ -6596,15 +6597,16 @@ button.close {
   color: #b2dbfb;
 }
 .navbar-inverse .form-control::-webkit-input-placeholder {
-  color: #b2dbfb;
+  color: #458B00;
+  text-shadow: 1.5px 1.5px #FFF;
 }
 .navbar-inverse .form-control[type=text] {
-  -webkit-box-shadow: inset 0 -1px 0 #b2dbfb;
-  box-shadow: inset 0 -1px 0 #b2dbfb;
+  -webkit-box-shadow: inset 0 -1px 0 #FFF
+  box-shadow: inset 0 -1px 0 #FFF;
 }
 .navbar-inverse .form-control[type=text]:focus {
-  -webkit-box-shadow: inset 0 -2px 0 #ffffff;
-  box-shadow: inset 0 -2px 0 #ffffff;
+  -webkit-box-shadow: inset 0 -2px 0 #458B00;
+  box-shadow: inset 0 -2px 0 #458B00;
 }
 .navbar-nav > li > .dropdown-menu {
   margin-top: 2px;
@@ -6824,7 +6826,7 @@ input[type=number]:focus,
 [type=tel].form-control:focus,
 [contenteditable].form-control:focus {
   -webkit-box-shadow: inset 0 -2px 0 #2196f3;
-  box-shadow: inset 0 -2px 0 #2196f3;
+  box-shadow: inset 0 -2px 0 #458B00;
 }
 textarea[disabled],
 textarea.form-control[disabled],

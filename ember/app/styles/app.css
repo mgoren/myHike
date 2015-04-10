@@ -14,17 +14,30 @@ video {
   transition: 1s opacity;
 }
 
+h2, label {
+  color: #458B00;
+  text-shadow: 1.5px 1.5px #FFF;
+}
+
+label {
+  font-size: 1.5em;
+}
+
+
 .navbar-brand {
-  font-size: 3em;
+  font-size: 5em;
+  text-shadow: 1.5px 1.5px #FFF;
 }
 
 .navbar-right {
   color: white;
   font-size: 1.25em;
+  text-shadow: 1px 1px #FFF;
 }
 
 .sub-header {
   font-size: 1.25em;
+  text-shadow: 1px 1px #FFF;
 }
 
 .video {
@@ -42,4 +55,34 @@ video {
   background: url('backgroundVideo.MOV') no-repeat;
   backgrond-size: cover;
 }
- 
+
+.centerz {
+  text-align: center;
+}
+
+.search-result-box {
+  position: absolute;
+  color: #458B00;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: -23px;
+  left: 40%;
+  right: 60%;
+}
+
+.search-result-box h4 {
+  color: #458B00;
+  text-shadow: 1px 1px #FFF;
+}
+
+.search-result-box a {
+  color: #458B00;
+}
+
+.map-canvas {
+  position: absolute;
+  top: 64px;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
