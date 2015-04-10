@@ -59,7 +59,7 @@ label {
 }
 
 .navbar {
-  padding-bottom: 20px;
+  padding-bottom: 13px;
   z-index: 100;
 }
 
@@ -115,7 +115,7 @@ label {
 
 .map-canvas {
   position: absolute;
-  top: 64px;
+  top: 77px;
   right: 0;
   bottom: 0;
   left: 0;
