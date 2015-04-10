@@ -1,6 +1,12 @@
+@font-face {
+  font-family: nature;
+  src: url(PlantsLetters.ttf);
+}
+
 body {
   background-color: darkgrey;
 }
+
 
 .ember-text-area {
   border-width: 0.7px !important;
@@ -35,18 +41,26 @@ label {
 
 .navbar-brand {
   font-size: 5em;
+  font-family: nature;
   text-shadow: 1.5px 1.5px #FFF;
 }
 
 .navbar-right {
   color: white;
+  font-family: nature;
   font-size: 1.25em;
   text-shadow: 1px 1px #FFF;
 }
 
 .sub-header {
+  font-family: nature;
   font-size: 1.25em;
   text-shadow: 1px 1px #FFF;
+}
+
+.navbar {
+  padding-bottom: 13px;
+  z-index: 100;
 }
 
 .video {
@@ -69,7 +83,21 @@ label {
   text-align: center;
 }
 
+.col-sm-3 {
+  font-family: nature;
+}
+
+.search {
+  font-family: nature;
+}
+
+.nature {
+  font-family: nature;
+  color: #458B00;
+}
+
 .search-result-box {
+  font-family: nature;
   position: absolute;
   color: #458B00;
   background-color: rgba(0, 0, 0, 0.8);
@@ -80,17 +108,19 @@ label {
 }
 
 .search-result-box h4 {
+  font-family: nature;
   color: #458B00;
   text-shadow: 1px 1px #FFF;
 }
 
 .search-result-box a {
+  font-family: nature;
   color: #458B00;
 }
 
 .map-canvas {
   position: absolute;
-  top: 64px;
+  top: 77px;
   right: 0;
   bottom: 0;
   left: 0;

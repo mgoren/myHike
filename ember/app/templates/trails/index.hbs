@@ -1,7 +1,9 @@
+<hr>
+{{#link-to 'trails.new' class='btn btn-success'}}Add New Trail{{/link-to}}
 {{#each trail in this}}
+  <hr>
   {{~#link-to 'trails.show' trail}}
   <p>  {{trail.name}} In: {{trail.location}} </p>
   {{~/link-to}}
 {{/each}}
-
-{{#link-to 'trails.new'}}Add New Trail{{/link-to}}
+<hr>
