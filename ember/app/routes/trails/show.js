@@ -4,7 +4,7 @@ import Ember from 'ember';
 
 var TrailsShowRoute = Ember.Route.extend({
   model: function(params) {
-    return this.store.find('trail', params.trail_id)
+    return this.store.find('trail', params.trail_id);
   }
 });
 

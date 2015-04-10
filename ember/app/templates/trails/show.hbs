@@ -1,17 +1,15 @@
-<h1>{{name}}</h1>
+<h1>{{model.name}}</h1>
 
-Location: {{location}}
+Location: {{model.location}}
 
-Latitude: {{latitude}}
-Longitude: {{longitude}}
-
+Latitude: {{model.latitude}}
+Longitude: {{model.longitude}}
 
 <iframe
   width="600"
   height="450"
   frameborder="0" style="border:0"
-  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD7eL97U_zG1oN0zY7CO0CJTFxsGMxsN1M
-    &q={{address}}">
+  src="https://www.google.com/maps/embed/v1/place?key=AIzaSyD7eL97U_zG1oN0zY7CO0CJTFxsGMxsN1M&q={{model.address}}">
 </iframe>
 
 <p>{{link-to "edit" 'trails.show.edit' this class="btn btn-warning"}}</p>

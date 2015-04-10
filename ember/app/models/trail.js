@@ -8,6 +8,7 @@ var Trail = DS.Model.extend({
   latitude: DS.attr('number'),
   longitude: DS.attr('number'),
   location: DS.attr('string'),
+  address: DS.attr('string'),
   ratings: DS.hasMany('rating', { async: true })
 });
 

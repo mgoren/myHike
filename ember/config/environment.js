@@ -46,7 +46,8 @@ module.exports = function(environment) {
       'connect-src': "'self' maps.gstatic.com",
       'img-src': "'self' *.googleapis.com maps.gstatic.com csi.gstatic.com",
       'style-src': "'self' 'unsafe-inline' fonts.googleapis.com maps.gstatic.com", // Allow inline styles and loaded CSS from http://fonts.googleapis.com
-      'media-src': "'self'"
+      'media-src': "'self'",
+      'frame-src': "'self' *.google.com"
     }
   }
 

@@ -51,6 +51,6 @@ class Api::TrailsController < ApplicationController
 private
 
   def trail_params
-    params.require(:trail).permit(:name, :description, :location, :latitude, :longitude)
+    params.require(:trail).permit(:name, :description, :location, :latitude, :longitude, :address)
   end
 end
