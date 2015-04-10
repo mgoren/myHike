@@ -76,6 +76,7 @@ label {
   margin-top: -23px;
   left: 40%;
   right: 60%;
+  z-index: 100;
 }
 
 .search-result-box h4 {
