@@ -6,7 +6,7 @@ export default Ember.Route.extend({
   },
   actions: {
     loading: function() {
-      this.controllerFor('maps.index').send('setLocation');
+      this.controllerFor('maps.index').send('getLocation');
     }
   }
 });
